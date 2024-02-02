@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1 id="status">Press the correct key:</h1>
+        <div id="key-container">
+          <span id="key">A</span>
+        </div>
+        <button id="gameBtn">New Game</button>
+      </div>
+      <canvas id="sales-chart"></canvas>
+
+
+
+  <style>
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#key-container {
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #2196f3;
+  display: inline-block;
+}
+
+#newGameBtn {
+  font-size: 1rem;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#newGameBtn:hover {
+  background-color: #45a049;
+}
+  </style>
+    <script src="./index.js"></script>
+    <script src="sales-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pnotify@7.2.3/dist/iife/PNotify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pnotify@7.2.3/dist/iife/PNotifyButtons.js"></script>
+</body>
+</html>
