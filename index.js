@@ -1,11 +1,11 @@
-gameBtn
+
 document.addEventListener('DOMContentLoaded', () => {
     const keys = ['H', 'S', 'O', 'Z', 'G', 'E', 'B', 'P', 'M', 'R'];
     let currentKeyIndex = 0;
   
     const statusElement = document.getElementById('status');
     const keyElement = document.getElementById('key');
-    const gameBtn = document.getElementById('gameBtn');
+    const newGameBtn = document.getElementById('newGameBtn');
   
     function updateKey() {
       keyElement.textContent = keys[currentKeyIndex];
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
     document.addEventListener('keydown', handleKeyDown);
-    gameBtn.addEventListener('click', handleNewGameClick);
+    newGameBtn.addEventListener('click', handleNewGameClick);
   
 
     updateKey();
